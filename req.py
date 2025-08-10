@@ -7,6 +7,7 @@ while True:
     try:
         response = requests.get(URL)
         print(f"Pinged {URL} - Status: {response.status_code}")
+        print("done")
     except Exception as e:
         print(f"Error pinging site: {e}")
     
